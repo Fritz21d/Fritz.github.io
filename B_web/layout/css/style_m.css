@@ -1,0 +1,55 @@
+@charset "utf-8";
+/*-----基本版面架構-----*/
+#container{
+	width: 620px;
+}
+/*-----選單設定-----*/
+#nav{
+	padding-top: 0;
+}
+#nav li:nth-child(2){
+	float: none;
+	overflow: hidden;
+}
+/*-----內容區塊設定-----*/
+.post{
+	width: 280px;
+	margin-right: 20px;
+	font-size: 18px;
+}
+.post img{
+	width: 280px;
+}
+.post:nth-child(even){
+	margin-right: 0;
+}
+/*-----橫幅設定-----*/
+#headerpost{
+	font-size: 14px;
+}
+#headerpost img,#headerpost #lead{
+	float: none;
+}
+#headerpost #lead{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.7);
+	width: auto;
+	padding: 10px 20px;
+	margin: 0;
+}
+#headerpost h2 {
+	margin: 10px 20px;
+}
+#headerpost p {
+	margin-bottom: 20px;
+}
+#headerpost .date{
+	float: left;
+	margin: 0;
+}
+#headerpost .more{
+	float: right;
+	margin: -12px 15px 0 0;
+}

@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+/*---歸零語法---*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+a:link {
+	text-decoration: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+::selection{
+	color: #fbff6b;
+	background-color: #63a2c6;
+}
+/*-----基本版面設定-----*/
+#body{
+	font-family: "微軟正黑體", sans-serif;
+	margin: 0px 10px;
+}
+#container{
+	margin: 0 auto;
+	width: 960px;
+}
+#header{
+	width: 960px;
+	height: 280px;
+	margin-bottom: 30px;
+}
+#content{
+	float: left;
+	width: 630px;
+	font-size: 16px;
+}
+#sidebar{
+	float: right;
+	width: 300px;
+}
+#footer{
+	clear: both;
+}
+/*-----選單設定-----*/
+#nav{
+	font-size: 16px;
+	overflow: hidden;
+	background-color: #e9516a;
+	text-transform: uppercase;
+}
+#nav li{
+	float: left;
+	width: 120px;
+}
+#nav li a{
+	display: block;
+	padding: 8px 0;
+	border-right: solid 1px #ffffff;
+	color: #ffffff;
+	text-align: center;
+}
+#nav li a:hover{
+	color: #fbff6b;
+	background-color: #63a2c6;
+}
+/*-----頁首設定-----*/
+#header{
+	background-image: url(../images/seagull.jpg);
+	background-position: left 50%;
+}
+#site{
+	background-color: rgba(255,255,255,0.6);
+	display: inline-block;
+	padding: 10px 20px;
+	margin-top: 30px;
+	color: #e9516a;
+	font-size: 16px;
+}
+#site h1{
+	font-size: 3.125em;
+	text-shadow: 1px 1px 5px #000;
+}
+#site h1 span{    
+	text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, 1px 1px 0 #fff,-1px 1px 0 #fff; /*---文字邊框做法---*/
+	font-family: 'Lily Script One',cursive;
+}
+#site p{
+	font-size: 1em ;
+	font-weight: bold;
+}
+/*-----內容區塊設定-----*/
+.post{
+	border-radius: 10px;
+	border: 1px solid #aaaaaa;
+	margin-bottom: 20px;
+	position: relative;
+}
+.date{
+	float: left;
+	background-color: #e9516a;
+	padding: 5px 15px 8px;
+	margin: 0 10px 5px 0;
+	text-align: center;
+	font-weight: bold;
+	font-size: 0.875em;
+	color: #ffffff;
+}
+.date span{
+	display: block;
+	font-size: 1.25em;
+}
+.post h2{
+	font-size: 1.375em;
+	border-bottom: 1px solid #aaaaaa;
+	margin: 6px 0 15px;
+	padding-bottom: 3px;
+}
+.post p{
+	font-size: 0.975em;
+	line-height: 1.6;
+}
+.post p img{
+	float: left;
+	margin-right: 10px;
+}
+.post .more{
+	background-image: url(../images/more_gray.png);
+	background-repeat: no-repeat;
+	background-position: 98% center;
+	text-align: right;
+	padding-right: 30px;
+	color: #e9516a;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+.post a{
+	display: block;
+	padding: 10px;
+	overflow: hidden;
+	color: #000000;
+}
+.post a:hover{
+	background-color: #dddddd;
+	background-image: linear-gradient(#ffffff 60%,#ffadbb);
+	border-radius: 9px;
+	cursor: pointer;
+}
+/*-----側欄設定-----*/
+.ad img{
+	margin-bottom: 20px;
+}
+.side-menu{
+	background-color: #e9516a;
+	padding: 15px;
+	margin-bottom: 20px; 
+}
+.side-menu h3{
+	font-size: 1.375em;
+	color: #ffffff;
+	margin-bottom: 25px;
+}
+.side-menu ul{
+	border-top: 1px solid white;
+}
+.side-menu li{
+	border-bottom: 1px solid white;
+}
+.side-menu li a {
+	display: block;
+	font-size: 0.875em;
+	color: #ffffff;
+	padding: 10px 0;
+}
+.side-menu li a:hover{
+	background-color: #63a2c6;
+	color: #fbff6b;
+	cursor: pointer;
+}
+/*-----頁尾設定-----*/
+#footer{
+	color: white;
+	background-color: #e9516a;
+	padding: 10px 10px 20px ;
+}
+#footer small{
+	font-size: 0.75em;
+	margin-top: 5px;
+	display: block;
+}
+.bold_text{
+	font-weight: bold;
+	text-shadow: 1px 1px 3px black;
+}
+.webfont{
+	font-family: 'Lily Script One',cursive;
+}
+/*-----漢寶選單-----*/
+.showmenu{
+	display: none;
+}
