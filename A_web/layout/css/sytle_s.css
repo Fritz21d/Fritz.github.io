@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+#container{
+	width: 100%;
+}
+#content{
+	width: 100%;
+}
+#sidebar{
+	width: 100%;
+}
+#content, #sidebar{
+	float:none;
+}
+#header{
+	margin: 0 0 15px;
+}
+/*-----圖片設定-----*/
+img, .menu img{
+	max-width:100%;
+	height:auto;
+}
+/*-----選單文字-----*/
+#nav a{
+	width: auto;
+	padding: 5px 8px;
+}
+/*-----日期文字-----*/
+.date {
+	float: none;
+	line-height: 3.5em;
+	padding: 5px 10px;
+	border-radius: 10px;
+}
+.date, .date span{
+	font-size: 0.75em;
+	display: inline;
+}
+#content h2{
+	font-size: 1.5em;
+}
+.cat {
+	font-size: 0.875em;
+	margin: 10px 0 15px;
+}

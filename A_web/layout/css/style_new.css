@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
+#container{
+	width: 1170px;
+	height:1000px;
+}
+#header{
+	height: 380px;
+	
+}
+#site{
+	float:left;
+	height:100px;
+}
+#iconmenu{
+	float:right;
+	height:100px;
+}
+#headerimg{
+	background-image: url(../images/header.jpg);
+	height:250px;
+}
+#nav{
+	height: 30px;
+	background-color:#0C0B0B;	
+}

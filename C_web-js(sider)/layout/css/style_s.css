@@ -1,0 +1,34 @@
+@charset "utf-8";
+/*-----版面基本設定-----*/
+#container{
+	width: 100%;
+}
+#header{
+	margin-bottom: 15px;
+}
+#content, #sidebar{
+	width: 100%;
+	float: none;
+}
+/*-----選單設定-----*/
+#nav{
+	font-size: 14px;
+}
+#nav li{
+	width: 25%;
+}
+#nav li:last-child a{
+	border: none;
+}
+/*-----頁首設定-----*/
+#site{
+	display: block;
+	text-align: center;
+	margin: 0;
+	font-size: 12px;
+}
+#header{
+	width: 100%;
+	height: 140px;
+	background-size: 100% auto;
+}
