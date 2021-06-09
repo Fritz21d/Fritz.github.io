@@ -1,6 +1,0 @@
-.cultured: #eeeeeeff;
-.onyx: #3d3d3dff;
-.titanium-yellow: #f2e602ff;
-.june-bud: #b7d448ff;
-.yellow-green-color-wheel: #17ae06ff;
-
